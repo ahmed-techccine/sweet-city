@@ -2,7 +2,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import ContactForm from "@/components/contactForm"
 
 export default function HomePage() {
@@ -19,13 +18,10 @@ export default function HomePage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl px-4">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Precision Machining
-              <br />
-              Services
+              Gearbox Repair &<br />Rotating Equipment Specialists
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Since the first days of operation, delivering on machining has been focused on providing the highest
-              quality service to our customers.
+              SC Equipment is dedicated to the expert repair, rebuilding, and servicing of industrial gearboxes and other rotating equipment. We help keep your operations running smoothly and reliably.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
@@ -33,23 +29,26 @@ export default function HomePage() {
               <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg">GET QUOTE</Button>
               </Link>
               <Link href="tel:+18328460120" passHref>
-  <Button
-    variant="outline"
-    className="border-white text-black hover:bg-white hover:text-orange-600 px-8 py-3 text-lg"
-  >
-    Call Now
-  </Button>
-</Link>
+                <Button
+                  variant="outline"
+                  className="border-white text-black hover:bg-white hover:text-orange-600 px-8 py-3 text-lg"
+                >
+                  Call Now
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
+      <div className="bg-orange-500 text-white text-center py-2 text-lg font-semibold">
+  Trusted Experts in Gearbox Repair, Rebuilds & Rotating Equipment Service
+</div>
 
       {/* High-quality SC Equipment */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-2">High-quality SC Equipment</h2>
+            <h2 className="text-4xl font-bold mb-2">Industrial Gearbox & Rotating Equipment Solutions</h2>
             <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
           </div>
 
@@ -132,15 +131,14 @@ export default function HomePage() {
       {/* Application of Excavator Attachments */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">Application of Excavator Attachments</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">Applications of Gearbox & Rotating Equipment Services</h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Excavator attachments are specialized tools that can be mounted on excavators to perform specific tasks
-            beyond standard digging operations. These attachments significantly expand the versatility and capabilities.
+            Our expert gearbox repair and rotating equipment services are essential across industries like manufacturing, construction, energy, and more. We help restore, rebuild, and maintain critical equipment to ensure your operations run reliably and efficiently—minimizing downtime and maximizing productivity.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="relative overflow-hidden rounded-lg">
               <Image
-                src="/images/image1.jpeg"
+                src="/images/image5.jpeg"
                 alt="Demolition work"
                 width={300}
                 height={250}
@@ -274,79 +272,8 @@ export default function HomePage() {
             height={300}
             className="mx-auto mt-20"
           />
-          {/* <div className="flex flex-wrap justify-center items-center gap-8 mt-12">
-            {["CAT", "DOOSAN", "HITACHI", "JCB", "KOBELCO", "KOMATSU", "SANY", "VOLVO"].map((brand) => (
-              <div key={brand} className="bg-white p-4 rounded">
-                <span className="text-black font-bold">{brand}</span>
-              </div>
-            ))}
-          </div> */}
         </div>
       </section>
-
-      {/* Blog Section */}
-      {/* <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">SC Equipment Blogs & News</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
-              <CardContent className="p-0">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Blog post 1"
-                  width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <div className="text-sm text-orange-500 mb-2">17 JUL</div>
-                  <h3 className="font-bold mb-2">What is an excavator & hydraulic grapple scrap driver?</h3>
-                  <p className="text-gray-600 text-sm">
-                    The hydraulic grapple scrap's excellent ground clearance and outstanding mobility make it ideal
-                    for...
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-0">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Blog post 2"
-                  width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <div className="text-sm text-orange-500 mb-2">22 JUN</div>
-                  <h3 className="font-bold mb-2">The ideal capacity for new rock diggers</h3>
-                  <p className="text-gray-600 text-sm">
-                    In the world of heavy machinery and construction equipment, rock diggers play a fundamental role...
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-0">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Blog post 3"
-                  width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <div className="text-sm text-orange-500 mb-2">04 JUN</div>
-                  <h3 className="font-bold mb-2">What are the Five Equipment of the Hydraulic Breaker?</h3>
-                  <p className="text-gray-600 text-sm">
-                    Hydraulic breaker is a kind of powerful demolition equipment, widely used in construction...
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section> */}
       <section className="py-16" id="contact">
   <div className="container mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-aut rounded-2xl shadow-lg overflow-hidden">
