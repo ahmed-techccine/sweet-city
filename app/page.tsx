@@ -150,7 +150,7 @@ export default function HomePage() {
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image
-                src="/images/image2.jpeg"
+                src="/images/philadelphia-gearbox1.jpg"
                 alt="Material handling"
                 width={300}
                 height={250}
@@ -206,11 +206,7 @@ export default function HomePage() {
                 <h2 className="text-4xl font-bold mb-2">Why Choose SC Equipment?</h2>
                 <div className="w-16 h-1 bg-orange-500 mb-8"></div>
                 <p className="text-gray-300 mb-8 leading-relaxed">
-                  Established in 2008, SC equipment is a professional company integrating R&D, manufacturing and sales
-                  of construction machinery attachments, we have several sets of advanced precision installation &
-                  inspection equipment including heating, cleaning, testing to assure our high quality. We own more than
-                  5 patents and most of products have CE certifications. Our attachments scope is continually expanding.
-                  We can also custom order any attachments you do not find in our listings.
+                  Established in 2008, SC Equipment specializes in the repair, rebuilding, and servicing of industrial gearboxes and rotating equipment. With advanced diagnostic and testing facilities, our experienced team ensures the highest quality standards for every project. We serve a wide range of industries and are committed to minimizing downtime and maximizing the reliability of your critical equipment. If you have unique requirements, our experts can provide custom solutions tailored to your needs.
                 </p>
                 <Link
                   href="/about"
