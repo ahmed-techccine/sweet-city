@@ -7,8 +7,9 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-2">
-            <Link href="/">
+            <Link href="/" className="flex items-center space-x-1">
               <Image src="/images/sc-logo.png" alt="SC Logo" width={80} height={60} className="object-contain" />
+              <h2 className="text-xl font-bold text-gray-900">SC Mechanic</h2>
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
