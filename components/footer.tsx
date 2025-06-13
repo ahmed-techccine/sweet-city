@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Image src="/images/sc-logo.png" alt="SC Logo" width={100} height={75} className="mb-4 object-contain" />
+            <Image src="/images/sc-logo-white.png" alt="SC Logo" width={100} height={75} className="mb-4 object-contain" />
             <p className="text-gray-400 text-sm mb-4">
               SC Equipment is a professional company focusing on the research and development, production and sales of
               excavator attachments.
             </p>
             <a href="tel:+18328460120" className="text-gray-400 text-sm hover:text-orange-400 transition">
-              Hotline: +1 (832) 846-0120
+              <span className="text-orange-400 text-lg">Hotline:</span> +1 (832) 846-0120
             </a>
             <br />
             <a href="mailto:scmachineco@gmail.com" className="text-gray-400 text-sm hover:text-orange-400 transition">
-              Email: scmachineco@gmail.com
+             <span className="text-orange-400 text-lg"> Email:</span> scmachineco@gmail.com
             </a>
             
           </div>
